@@ -1,0 +1,115 @@
+@import 'normalize';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Moderustic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    letter-spacing: .4px;
+    background-color: #e9f3ff;
+    color: #000;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+input,
+select {
+    height: 2rem;
+}
+
+label {
+    text-transform: uppercase;
+}
+
+button {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+    background-color: #4639f7;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    &:hover {
+        background-color: #6458ff;
+    }
+}
+
+section {
+    padding: 2rem 0;
+    border-bottom: 1px dashed black;
+}
+
+.image-generator {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+
+    &__image {
+        // height: 403px;
+    }
+
+    .button {
+        margin: 1rem;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.forms {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    > div {
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+        width: 400px;
+
+        > button {
+            margin-top: 1rem;
+        } 
+    }
+    
+}
+
+.collection {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    &__images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .image {
+            position: relative;
+            margin: 20px;
+            > img {
+                max-width: 100%;
+            }
+            > button {
+                position: absolute;
+                top: 0;
+                right: 0;
+                text-transform: uppercase;
+                background-color: red;
+                padding: 5px;
+                border-radius: 0 0 0 3px;
+                font-size: .7rem;
+                font-weight: 600;
+            }
+        }
+    }
+}
