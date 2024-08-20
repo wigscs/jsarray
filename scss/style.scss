@@ -21,6 +21,7 @@ h1 {
 
 input,
 select {
+    padding: 5px 10px;
     height: 2rem;
 }
 
@@ -71,7 +72,7 @@ section {
     justify-content: center;
     flex-wrap: wrap;
 
-    > div {
+    > div, > form {
         display: flex;
         padding: 20px;
         flex-direction: column;
@@ -81,7 +82,13 @@ section {
             margin-top: 1rem;
         } 
     }
-    
+    .error {
+        display: none;
+        background-color: red;
+        color: #fff;
+        padding: 5px 10px;
+        font-size: .8rem;
+    }
 }
 
 .collection {
@@ -97,6 +104,8 @@ section {
             position: relative;
             margin: 20px;
             > img {
+                height: 200px; 
+                width: 250px;
                 max-width: 100%;
             }
             > button {

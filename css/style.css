@@ -328,6 +328,7 @@ h1 {
 
 input,
 select {
+  padding: 5px 10px;
   height: 2rem;
 }
 
@@ -372,14 +373,21 @@ section {
   justify-content: center;
   flex-wrap: wrap;
 }
-.forms > div {
+.forms > div, .forms > form {
   display: flex;
   padding: 20px;
   flex-direction: column;
   width: 400px;
 }
-.forms > div > button {
+.forms > div > button, .forms > form > button {
   margin-top: 1rem;
+}
+.forms .error {
+  display: none;
+  background-color: red;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 0.8rem;
 }
 
 .collection {
@@ -396,6 +404,8 @@ section {
   margin: 20px;
 }
 .collection__images .image > img {
+  height: 200px;
+  width: 250px;
   max-width: 100%;
 }
 .collection__images .image > button {

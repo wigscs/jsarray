@@ -13,25 +13,27 @@
     <section class="image-generator">
         <h1>Random Image</h1>
         <div class="image-generator__image">
-            
+            <img id="random-image" src="#" alt="Random Image">
         </div>
         <div class="button">
-            <button id="get-image">Get Image</button>
+            <button id="get-image">New Image</button>
         </div>
     </section>
     <section class="forms">
         <div>
             <label for="email">Enter Email:</label>
             <input type="email" name="email" id="email">
-            <button>Add Email</button>
+            <span class="error"></span>
+            <button id="add-email">Add Email</button>
         </div>
 
         <div>
             <label for="collection">Select Collection:</label>
             <select name="collection" id="collection">
-                
+
             </select>
-            <button>Add to Collection</button>
+            <span class="error"></span>
+            <button id="add-image">Add to Collection</button>
         </div>
     </section>
     <section class="collection">
@@ -47,7 +49,7 @@
 
         </div>
     </section>
-    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
