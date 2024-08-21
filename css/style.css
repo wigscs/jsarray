@@ -410,7 +410,6 @@ section {
   margin: 20px;
 }
 .collection__images .image img {
-  height: 200px;
   width: 250px;
   max-width: 100%;
 }

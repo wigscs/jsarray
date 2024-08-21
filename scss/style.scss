@@ -54,10 +54,6 @@ section {
     text-align: center;
     padding: 20px;
 
-    &__image {
-        // height: 403px;
-    }
-
     .button {
         margin: 1rem;
     }
@@ -111,7 +107,6 @@ section {
             position: relative;
             margin: 20px;
             img {
-                height: 200px; 
                 width: 250px;
                 max-width: 100%;
             }
